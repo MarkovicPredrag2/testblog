@@ -1,0 +1,12 @@
+<h1>Custom title</h1>
+<hr>
+{% for person in site.data.people %}
+    {{ person.name }}, {{ person.occupation}} <br>
+{% endfor %}
+{{ content }}
+
+
+{% for file in site.static_files %}
+    {{ file.extname }} <br>
+{% endfor %}
+

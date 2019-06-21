@@ -1,0 +1,15 @@
+---
+layout: wrapper
+author: predrag
+---
+{% if page.title == "Default title" %}
+    This page has a default title
+{% elsif page.title == "Another title"}
+    This page has a different title
+{% else %}
+    This post has none of the above
+{% endif %}
+
+<h1>This is nested content written by {{layout.author}} </h1>
+<h3>Title: {{page.title}}</h3>
+{{ content }}
